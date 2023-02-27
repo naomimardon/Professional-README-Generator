@@ -80,7 +80,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((data) => {
-        const filename = `README.md`;
+        const filename = `${data.title.split(' ').join('-')}.md`;
         writeToFile(filename, generateMarkdown(data))
     });
 };
