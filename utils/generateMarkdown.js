@@ -13,8 +13,10 @@ function generateMarkdown(data) {
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credits)
   * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
 
@@ -26,30 +28,23 @@ function generateMarkdown(data) {
 
   ![${data.altText}](${data.screenshot})
 
-  ## Credits
-
-  ${data.credits}
-
   ## License
 
   ${data.license}
-
-  ## Badges
-
-  ${data.license}
-
-  ## Features
-
-  ${data.features}
 
   ## Contributing
 
   ${data.contributing}
 
-  ## Test
+  ## Tests
 
   ${data.tests}
 
+  ## Questions
+
+  For further information:
+    Visit: ${data.github}
+    Contact: ${data.email}
 `;
 }
 

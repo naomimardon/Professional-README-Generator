@@ -41,20 +41,10 @@ const questions = [
         message: 'Provide some alt text describing the screenshot:',
     },
     {
-        type: 'input',
-        name: 'credits',
-        message: 'List your collaborators with links to their GitHub profiles:',
-    },
-    {
         type: 'list',
         name: 'license',
         message: 'Which license did you use for your project? (Use the down arrow to choose one):',
         choices: ['None','MIT License','GNU General Public License v3.0','Apache License 2.0', 'Other'],
-    },
-    {
-        type: 'input',
-        name: 'features',
-        message: 'List the features of your project:',
     },
     {
         type: 'input',
@@ -65,6 +55,16 @@ const questions = [
         type: 'input',
         name: 'tests',
         message: 'Write tests for your application and provide examples on how to run them:',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your GitHub?',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
     },
 ];
 
