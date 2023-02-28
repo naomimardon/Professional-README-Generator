@@ -17,7 +17,7 @@ const questions = [
     {
         type: 'input',
         name: 'appLink',
-        message: 'Provide a link to the deployed application:',
+        message: 'Provide a link to the deployed application (starting with https://):',
     },
     {
         type: 'input',
