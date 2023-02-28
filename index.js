@@ -20,9 +20,15 @@ const questions = [
         message: 'Provide a link to the deployed application (starting with https://):',
     },
     {
-        type: 'input',
+        type: 'editor',
         name: 'installation',
         message: 'What are the steps required to install your project?',
+    },
+    {
+        type: 'input',
+        name: 'otherLicense',
+        message: 'Enter the name of the license:',
+        when: (data) => data.license === 'Other'
     },
     {
         type: 'input',
@@ -70,12 +76,17 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-    err ? console.log(err) : console.log('Success!')
+    err ? console.info(err) : console.info('Thank you for answering the questions. Your README is ready to view!')
     );
 };
 
 // function to initialize program
 function init() {
+    console.info("Welcome to the Professional README Generator.");
+    console.info("Answer the following questions to create your README.");
+    console.info("Some questions will open a text editor so that you can type on multiple lines.");
+    console.info("When your answer is ready, press esc then type :wq to close the editor and move to the next question.");
+
     inquirer
     .prompt(questions)
     .then((data) => {
