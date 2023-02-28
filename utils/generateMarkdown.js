@@ -64,8 +64,9 @@ function generateMarkdown(data) {
   ## Questions
 
   For further information:
-    Visit: ${data.github}
-    Contact: ${data.email}
+  
+  * Visit: ${data.github}
+  * Contact: ${data.email}
 `;
 }
 
